@@ -1,0 +1,25 @@
+{
+    "version": "1.4",
+    "description": "Open source CTExplore alternative for Chrono Trigger (Steam) modding",
+    "homepage": "https://github.com/jimzrt/ChronoMod",
+    "license": "Unknown",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/jimzrt/ChronoMod/releases/download/1.4/ChronoMod.zip",
+            "hash": "95d4b6dc5848653dcb2f63bed9b98eb2a1dcbfdc593c68c82f58d0e1f615aa43"
+        }
+    },
+    "bin": "ChronoMod.exe",
+    "persist": "ChronoMod.ini",
+    "checkver": "github",
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/jimzrt/ChronoMod/releases/download/$version/ChronoMod.zip"
+            }
+        },
+        "hash": {
+            "mode": "download"
+        }
+    }
+}
